@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+.header{
+background-color:white;
+height:150px;
+}
+
+.main{
+
+max-height:250px
+
+}
+.footer{
+background-color:Yellow;
+height:150px;
+}
+.mobshow {
+     display:none;
+
+	}
+
+.nav ul li{float:left; width:15%;text-decoration:none;list-style:none}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) { 
+
+.mobshow {
+     display:block;
+
+	}  
+
+.nav ul li{
+float:left;
+width:100%;
+text-decoration:none;
+list-style:none
+border:1px solid black;
+background-color:gray;
+}
+
+
+	}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+		
+
+</head>
+<body>
+<div class="header"> Helo
+<nav class="nav">
+<ul>
+<li>Home</li>
+<li>About</li>
+<li>Contact</li>
+
+</ul>
+
+</nav>
+
+
+</div>
+<div class="main"> 
+Adding Local State to a Class
+Add a class constructor that assigns the initial this.state:
+class Clock extends React.Component {
+constructor(props) {
+super(props);
+this.state = {date: new Date()};
+}
+
+
+</div>
+
+<div class="footer"> 
+<div class="mobshow" >
+<i class="fa fa-car" style="color:red;font-size:56px;"></i><a href="http://www.google.com">Helo</a>
+</div>
+
+</div>
+
+
+</body>
+</html>
