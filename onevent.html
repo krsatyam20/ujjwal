@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+function add(){
+var x,y,z;
+ 
+ x=document.getElementById("fno").value;
+ y=document.getElementById("sno").value;
+ //x=parseInt(x);
+ //y=parseInt(y);
+ z=eval(x);
+ document.getElementById("fno").value=z;
+//alert(z)
+}
+
+</script>
+</head>
+<body>
+
+<input type="text" id="fno" />
+<input type="text"  id="sno"/>
+<input type="text"  id="res"/>
+<input type="button" onclick="add();"  value="+"/> 
+
+</body>
+</html>
